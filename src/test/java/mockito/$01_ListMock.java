@@ -19,7 +19,7 @@ public class $01_ListMock {
         mockedList2.clear();
 
         //verification
-        verify(mockedList2).add("one");
+        verify(mockedList2).add("one");     // 验证add("one")方法有且仅被被调用过一次
         verify(mockedList2).clear();
     }
 }

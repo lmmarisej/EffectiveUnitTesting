@@ -13,8 +13,7 @@ import org.junit.internal.matchers.TypeSafeMatcher;
  * @author t.wood
  */
 public class RegexMatcher {
-	private static abstract class AbstractRegexpMatcher extends
-			TypeSafeMatcher<String> {
+	private static abstract class AbstractRegexpMatcher extends TypeSafeMatcher<String> {
 		protected final String regex;
 		protected final Pattern compiledRegex;
 

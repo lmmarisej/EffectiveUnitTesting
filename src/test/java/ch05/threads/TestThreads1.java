@@ -36,7 +36,7 @@ public class TestThreads1 {
 		for (int i = 0; i < threads; i++) {
 			new Thread(runnable).start();
 		}
-		allThreadsComplete.await(10, TimeUnit.SECONDS);
+		allThreadsComplete.await(10, TimeUnit.SECONDS);		// 使用JUC可以立即得知任务已结束
 		int expectedNoOfValues = threads * callsPerThread;
 		assertEquals(expectedNoOfValues, values.size());
 	}

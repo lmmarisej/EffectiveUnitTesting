@@ -7,7 +7,7 @@ import org.junit.Test;
 public class TestTemplate2 {
 	@Test
 	public void emptyTemplate() throws Exception {
-		String template = "";
+		String template = "";			// 提取局部变量
 		assertEquals(template, new Template(template).evaluate());
 	}
 

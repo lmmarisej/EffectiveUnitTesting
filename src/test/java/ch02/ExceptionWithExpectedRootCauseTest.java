@@ -17,8 +17,7 @@ public class ExceptionWithExpectedRootCauseTest {
 		throw new RuntimeException("Ka-boom!", new NullPointerException());
 	}
 
-	private Matcher<? extends Throwable> rootCauseOf(
-			final Class<? extends Throwable> expectedCause) {
+	private Matcher<? extends Throwable> rootCauseOf(final Class<? extends Throwable> expectedCause) {
 		return new BaseMatcher() {
 			@Override
 			public boolean matches(Object candidate) {

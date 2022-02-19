@@ -16,7 +16,6 @@ public class TestConfiguration3 {
 	@Test
 	public void knowsTheSystemsDownloadDirectoryOnWindows() throws Exception {
 		String downloadsDir = new Platform.Windows().downloadDir();
-		assertThat(downloadsDir.toLowerCase(),
-				matches("c:\\\\users\\\\(.*?)\\\\downloads"));
+		assertThat(downloadsDir.toLowerCase(), matches("c:\\\\users\\\\(.*?)\\\\downloads"));
 	}
 }

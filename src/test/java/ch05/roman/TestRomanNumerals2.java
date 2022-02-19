@@ -21,7 +21,7 @@ public class TestRomanNumerals2 {
 		this.numeral = numeral;
 	}
 
-	@Parameters
+	@Parameters		// 为测试用例构造设置不同的参数来构造实例并测试
 	public static Collection<Object[]> data() {
 		return asList(new Object[][] { { 1, "I" }, { 2, "II" }, { 4, "IV" },
 				{ 5, "V" }, { 7, "VII" }, { 9, "IX" }, { 10, "X" } });

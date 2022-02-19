@@ -14,8 +14,7 @@ public class TestConfiguration1 {
 		if (platform.isMac()) {
 			assertThat(dir, matches("/Users/(.*?)/Downloads"));
 		} else if (platform.isWindows()) {
-			assertThat(dir.toLowerCase(),
-					matches("c:\\\\users\\\\(.*?)\\\\downloads"));
+			assertThat(dir.toLowerCase(), matches("c:\\\\users\\\\(.*?)\\\\downloads"));
 		}
 	}
 }
